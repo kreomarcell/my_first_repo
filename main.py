@@ -1,5 +1,10 @@
+def hello():
+    print('Приветствую, пользователь!')
+
+
 if __name__ == '__main__':
 
+    hello()
     with open('data.txt', 'rb') as file:
         data = file.read()
     print('            00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f')
@@ -9,4 +14,4 @@ if __name__ == '__main__':
         s = ''.join(chr(el) if chr(el).isprintable() else '.' for el in data[i:i + 16])
         print(f'{addr}    {hx:<48}     {s}')
 
-#  добавил комментарий
+#  убрал комментарий
