@@ -9,5 +9,4 @@ if __name__ == '__main__':
         s = ''.join(chr(el) if chr(el).isprintable() else '.' for el in data[i:i + 16])
         print(f'{addr}    {hx:<48}     {s}')
 
-
-
+#  добавил комментарий
